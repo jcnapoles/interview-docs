@@ -1,0 +1,11 @@
+{
+    "owasp": "OWASP",
+    "jenkins": "Jenkins",
+    "sonarqube": "SonarQube",
+    "docker": "Docker",
+    "kubernetes": "Kubernetes",
+    "prometheus": "Prometheus",
+    "grafana": "Grafana",
+    "elk": "ELK",
+    "splunk": "Splunk"
+}

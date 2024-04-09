@@ -1,6 +1,6 @@
-# Nextra Docs Template 
+# Docs to prepare to an interview
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+this is documentation created with [Nextra](https://nextra.site), a static site generator for Next.js.
 
 [**Live Demo →**](https://nextra-docs-template.vercel.app)
 

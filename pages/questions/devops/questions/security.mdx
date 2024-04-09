@@ -1,0 +1,13 @@
+## What would you do to avoid the SQL Injection problem?
+
+There are a few things you can do to avoid the SQL Injection problem:
+
+1.Use parameterized queries or prepared statements: Instead of directly concatenating user input into SQL queries, use parameterized queries or prepared statements. This ensures that user input is treated as data and not executable code.
+
+Input validation and sanitization: Validate and sanitize user input before using it in SQL queries. This can involve checking for expected data types, length limits, and using functions like htmlspecialchars or mysqli_real_escape_string to escape special characters.
+
+Least privilege principle: Ensure that the database user account used by the application has the minimum required privileges. This reduces the potential impact of an SQL Injection attack.
+
+Implement a web application firewall (WAF): A WAF can help detect and block SQL Injection attempts by analyzing incoming requests and blocking suspicious patterns.
+
+Regularly update and patch your database software: Keep your database software up to date with the latest security patches to mitigate known vulnerabilities.
