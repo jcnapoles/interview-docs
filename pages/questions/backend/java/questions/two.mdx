@@ -1,0 +1,17 @@
+# What is an exception in Java and how is it handled?
+
+An exception is a problem that arises during the execution of a program. It is handled using try, catch, and optionally finally blocks.
+
+For example:
+
+```java
+try {
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Cannot divide by zero");
+} finally {
+    System.out.println("This block is always executed");
+}
+
+```
+
