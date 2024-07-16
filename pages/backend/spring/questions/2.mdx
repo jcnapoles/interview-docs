@@ -1,0 +1,18 @@
+# How to define a controller in Spring MVC?
+
+A controller in Spring MVC is defined using the `@Controller` annotation and mapping HTTP requests to specific methods with `@RequestMapping` or `@GetMapping`, `@PostMapping`, etc.
+
+For example:
+
+```java
+@Controller
+public class MyController {
+    
+    @GetMapping("/hello")
+    @ResponseBody
+    public String sayHello() {
+        return "Hello, World!";
+    }
+}
+```
+

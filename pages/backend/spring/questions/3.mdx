@@ -1,0 +1,29 @@
+# What is Dependency Injection in Spring?
+
+Dependency injection is a design pattern that allows dependencies to be created outside of a class and injected into that class. In Spring, this is achieved by using annotations such as `@Autowired`, `@Inject`, or by configuring in XML files.
+
+For example:
+
+```java
+@Component
+public class MyService {
+    public void serve() {
+        System.out.println("Service called");
+    }
+}
+
+@Component
+public class MyController {
+    private final MyService myService;
+
+    @Autowired
+    public MyController(MyService myService) {
+        this.myService = myService;
+    }
+
+    public void doSomething() {
+        myService.serve();
+    }
+}
+```
+

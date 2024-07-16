@@ -1,0 +1,22 @@
+# What is Spring Data JPA and how to use it?
+
+Spring Data JPA is a Spring project that facilitates the implementation of JPA (Java Persistence API) based repositories. It is used to interact with relational databases by using predefined interfaces and methods.
+
+For example:
+
+```java
+@Entity
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String email;
+    
+    // Getters and setters
+}
+
+public interface UserRepository extends JpaRepository<User, Long> {
+    List<User> findByName(String name);
+}
+```

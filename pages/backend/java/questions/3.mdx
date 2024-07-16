@@ -1,0 +1,38 @@
+# What is an exception in Java and how is it handled?
+
+Polymorphism in Java is the ability of a variable, function, or object to take multiple forms. It is primarily implemented through inheritance and interfaces.
+
+For example:
+
+```java
+public class Animal {
+    public void makeSound() {
+        System.out.println("Animal sound");
+    }
+}
+
+public class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Woof");
+    }
+}
+
+public class Cat extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Meow");
+    }
+}
+
+public class TestPolymorphism {
+    public static void main(String[] args) {
+        Animal myAnimal = new Dog();
+        myAnimal.makeSound(); // Outputs: Woof
+        
+        myAnimal = new Cat();
+        myAnimal.makeSound(); // Outputs: Meow
+    }
+}
+```
+

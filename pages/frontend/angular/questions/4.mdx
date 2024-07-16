@@ -1,0 +1,25 @@
+# What are modules in Angular and how are they organized?
+
+Modules in Angular are classes that group related components, directives, pipes, and services. They are defined using the `@NgModule` decorator and organized into separate files to keep the code modular and clean.
+
+For example:
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { MyComponent } from './my-component/my-component.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    MyComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```

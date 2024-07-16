@@ -1,0 +1,19 @@
+# What is a component in Angular and how is it created?
+
+A component in Angular is a fundamental piece of the user interface. It is created using the `@Component` decorator.
+
+For example:
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-my-component',
+  templateUrl: './my-component.component.html',
+  styleUrls: ['./my-component.component.css']
+})
+export class MyComponent {
+  title = 'My Angular Component';
+}
+
+```

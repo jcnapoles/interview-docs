@@ -1,7 +1,9 @@
 {
   "index": "Introduction",
-  "questions": "Questions",
-  "documentation": "Documentation", 
+  "frontend": "Frontend",
+  "backend": "Backend",
+  "devops": "DevOps", 
+  "docs": "Docs",
   "about": {
     "title": "About",
     "type": "page"

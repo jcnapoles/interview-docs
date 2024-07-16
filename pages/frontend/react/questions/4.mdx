@@ -1,0 +1,42 @@
+# What is the Context API in React and what is it used for?
+
+The Context API in React is a way to pass data through the component hierarchy without having to manually pass props at each level. It is used to handle global state, such as the authenticated user, application settings, etc.
+
+For example:
+
+```javascript
+import React, { createContext, useContext, useState } from 'react';
+
+const MyContext = createContext();
+
+function MyProvider({ children }) {
+  const [value, setValue] = useState('Hello World');
+
+  return (
+    <MyContext.Provider value={{ value, setValue }}>
+      {children}
+    </MyContext.Provider>
+  );
+}
+
+function MyComponent() {
+  const { value, setValue } = useContext(MyContext);
+
+  return (
+    <div>
+      <p>{value}</p>
+      <button onClick={() => setValue('Hello React')}>
+        Change Value
+      </button>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <MyProvider>
+      <MyComponent />
+    </MyProvider>
+  );
+}
+```
